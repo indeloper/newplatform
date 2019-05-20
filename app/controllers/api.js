@@ -8,13 +8,13 @@ module.exports.get = (req, res) => {
             res.send({ 'error': 'You haven`t premission, i`am sorry'});
         } else {
             // req.app.locals.client.db("database").collection('users').findOne(pid, (err, item) => {
-                req.app.locals.collectionUsers.findOne(pid, (err1, item1) => {
-                    if (err1) {
-                        res.send({'error':'An error has occurred'});
-                    } else {
-                        res.send(item1);            
-                    }
-                });
+            req.app.locals.collectionUsers.findOne(pid, (err1, item1) => {
+                if (err1) {
+                    res.send({'error':'An error has occurred'});
+                } else {
+                    res.send(item1);            
+                }
+            });
         }
     })
 }
