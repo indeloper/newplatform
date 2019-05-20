@@ -1,4 +1,4 @@
-const ObjectID = require('mongodb').ObjectID;
+var ObjectID = require('mongodb').ObjectID;
 
 module.exports.get = (req, res) => {
     const gid = { 'gid': req.params.gid };
