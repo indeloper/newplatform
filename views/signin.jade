@@ -1,0 +1,10 @@
+extends header
+
+block content
+    h1= user
+    form(action="/signin", method="post")
+        input(type="text", name="user")
+        button(type="submit") SEND
+
+    form(action="/logout", method="get")
+        button(type="submit") LOGOUT
